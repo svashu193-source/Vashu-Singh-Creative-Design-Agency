@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f001c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2b0054;
+  border-radius: 9999px;
+  border: 2px solid #0f001c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4b0082;
+}
